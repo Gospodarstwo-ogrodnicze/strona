@@ -6,7 +6,7 @@ RewriteRule pelargonia pelargonia.html
 RewriteRule aktualności aktual.html
 RewriteRule kontakt kontakt.html
 RewriteRule kwiaty-wiszace wiszace.html
-RewriteRule o-nas onas.html
+RewriteRule o-nas kontakt.html
 RewriteRule cennik cennik.html
 RewriteRule zamowienia zamów.html
 RewriteRule 404 error/page_not_found.html
