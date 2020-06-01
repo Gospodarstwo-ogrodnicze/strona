@@ -1,0 +1,319 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #303030;
+    color: white;
+    margin: 0;
+}
+
+.header
+{
+	width:100%;
+	padding: 40px 0;
+}
+
+.logo
+{
+	width: 990px;
+	font-size: 45px;
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+    line-height: 60px;
+}
+
+#popup_this {
+	text-align:center;
+    color: black;
+    font-size: 1.3em;
+    font-weight: bold;
+	background: #fff;
+    border-radius: 20px;
+	padding: 30px;
+	z-index: 100;
+    position: absolute; 
+    left: 150px;
+    animation-name: pojawianie;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.uwaga {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.b-close {
+    border-radius: 0 20px 0 20px;
+	color: #fff;
+	background: #ff0000;
+	padding: 5px 10px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+}
+
+.content
+{
+	width: 1250px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+}
+
+.pds{
+	width:1000px;
+	margin:auto;
+	position:relative;
+}
+
+.zamow {
+    background-color: #00cc00;
+    border: 1px solid #006600;
+    -moz-box-shadow: 2px 2px 3px #006600;
+    -webkit-box-shadow: 2px 2px 3px #006600;
+    box-shadow: 2px 2px 3px #006600;
+    `-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 3px 10px;
+}
+
+.zamow2 {
+    background-color: red;
+    border: 1px solid #006600;
+    -moz-box-shadow: 2px 2px 3px #006600;
+    -webkit-box-shadow: 2px 2px 3px #006600;
+    box-shadow: 2px 2px 3px #006600;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 3px 10px;
+}
+
+.zamow:hover {
+	background-color: #00b300;
+	transition: all .5s
+}
+
+.zamow:active {
+    -moz-box-shadow: 2px 2px 3px #006600 inset;
+    -webkit-box-shadow: 2px 2px 3px #006600 inset;
+    box-shadow: 2px 2px 3px #006600 inset;
+}
+
+.formularz {
+	box-shadow: 0 0 20px 0 #000000;
+	margin: 50px auto;
+	width: 350px;
+	text-align: center;
+	background: #d9d9d9;
+}
+
+.formularz h1 {
+	background: #00cc00;
+	margin-top: 0;
+	padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.formularz input {
+	display: block;
+	width: 90%;
+	margin: 10px auto;
+	padding: 10px;
+}
+
+.formularz select {
+	display: block;
+	width: 90%;
+	margin: 10px auto;
+	padding: 10px;
+}
+
+.formularz select {
+	display: block;
+	width: 90%;
+	margin: 10px auto;
+	padding: 10px;
+}
+
+.formularz textarea {
+	width: 90%;
+	margin: 5px auto;
+	padding-left: 10px;
+	height: 80px;
+}
+
+.przycisk {
+	cursor: pointer;
+	background-color: #00cc00;
+	box-shadow: 2px 2px 3px #006600;
+	border-color: #00cc00;
+	border-radius: 7px;
+	width: 150px !important;
+	margin-left: 18px !important;
+}
+
+.g-recaptcha {
+	margin: 10px 25px;
+}
+
+.status {
+	font-size: 15px;
+	color: green;
+	padding: 15px;
+}
+
+.status span {
+	color: red;
+}
+
+.mapa {
+    width: 100%;
+    height: 500px;
+    border: 0;
+}
+
+.tytul {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 2.5em;
+    font-weight: bold;
+}
+
+.tresc {
+	font-size: 1.5em;
+    font-weight: bold;
+}
+
+#text {
+    visibility: hidden;
+    animation-name: pojawianie;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes pojawianie {
+    from {opacity:0;} to {opacity:1;visibility: visible;}
+}
+
+
+.cennik {
+    float: center;
+    margin-top: 15px;
+    width: 1150px;
+    height: 175px;
+    border-radius: 10px;
+    background: white;
+    color: black;
+    transition: 0.3s all ease-in-out;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.cennikt {
+    font-size: 1.5em;
+}
+
+.cenniko {
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+.cennik img {
+    margin-top: 8px;
+    margin-left: 13px;
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+}
+
+.cennik:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.stopka
+{
+	width: 100%;
+    height: 30px;
+    line-height: 30px;
+	text-align: center;
+	background-color: #222222;
+	position: absolute;
+	top: 1000px;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 530px) {
+    #popup_this {
+        position: absolute; 
+        left: 1px;
+        width: 350px;
+        padding: 10px;
+    }
+    .logo {
+        width: 350px;
+        font-size: 20px;
+        line-height: 50px;
+    }
+    .logo img {
+        height: 50px;
+        width: 65px;
+    }
+    .stopka {
+        height: 60px;
+        width: 100%;
+        top: 900px;
+    }
+    .tytul {
+        font-size: 1.5em;
+    }
+    .tresc {
+        font-size: 1em;
+    }
+    .pokazowe {
+        width: 60%;
+        height: 60%;
+    }
+    .obrazek {
+        width: 80%;
+        height: 80%;
+    }
+    .zamow {
+        font-size: 15px;
+        width: 25%;
+        height: 25%;
+    }
+    .content {
+        width: 90%;
+        margin-left: auto;
+    }
+    .mapa {
+        width: 100%;
+        height: 300px;
+        border: 0;
+    }
+    .cennik {
+        margin-top: 15px;
+        width: 320px;
+        height: 180px;
+        padding: 8px;
+    }
+    .pds {
+        width: 100%;
+    }
+    .cennikt {
+      font-size: 1.5em;
+    }
+    .cenniko {
+        margin-top: 5px;
+        font-size: 1em;
+    }
+    .cennik img {
+        margin-top: 8px;
+        margin-left: 13px;
+        width: 130px;
+        height: 130px;
+    }
+}
